@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Abbaba Toure</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: white;
+      color: rgb(85, 85, 85);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .loading-container {
+      text-align: center;
+    }
+
+    .loading-text {
+      font-size: 2rem;
+      font-weight: 500;
+      color: rgb(53, 53, 53);
+    }
+
+    .dot-flash::after {
+      content: " .";
+      animation: dots 1s steps(1, end) infinite;
+    }
+
+    .btn-back {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: white;
+  border: 1px solid rgb(85, 85, 85);
+  border-radius: 2rem;
+  color: rgb(53, 53, 53);
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+  background-color: rgb(53, 53, 53);
+  color: white;
+}
+
+
+    @keyframes dots {
+      0%   { content: " ."; }
+      33%  { content: " .."; }
+      66%  { content: " ..."; }
+      100% { content: " ."; }
+    
+    }
+  </style>
+</head>
+<body>
+  <div class="loading-container">
+    <p class="loading-text">Loading<span class="dot-flash"></span></p>
+    <button onclick="location.href='index.html'" class="btn-back">← Back to Home</button>
+  </div>
+</body>
+</html>

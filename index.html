@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio- At</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav"> 
+        <div class="logo">Abbaba Toure</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#work">work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Abbaba Toure</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span> 
+                <span></span> 
+                <span></span> 
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#work" onclick="toggleMenu()">work</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> 
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/4.png" alt="Abbaba Toure profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Abbaba Toure</h1>
+            <p class="section__text__p2">Fullstack Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Abbaba_Resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/abbaba-toure/'">
+                <img src="./assets/github.png" alt="My github profile" class="icon" onclick="location.href='https://github.com/abbabat'">
+            </div>
+        </div>
+    </section>
+    <section id="about"> 
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/8.png" alt="profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>3+ years <br />Fullstack Developer</p> 
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>2nd year <br />university student <br />B.SC. Software engineering</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Hello, I am a second-year student at the University of Ottawa, working towards graduating in 2028 with a bachelor's degree in software engineering. I love learning new skills and expanding my experiences. I am currently working on expanding my skills and knowledge in software development through academic courses available to me and by involving myself in diverse projects both alone and with peers. In my co-op journey, my goal is to improve as a software engineer by developing various software development abilities and contributing to real-life projects that will have a significant impact on the software industry.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#work'">
+    </section>
+    <section id="work"> 
+        <p class="section__text__p1">Learn About</p>
+        <h1 class="title">How I Work</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Automation Tester Intern</h3>
+                        <p>Global Affairs Canada <br />January 2025 – May 2025</p> 
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Junior Developer Intern</h3>
+                        <p>University of Ottawa <br />May 2024 – August 2024</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        As a Software Engineering student at the University of Ottawa, I have built hands-on experience in full-stack development, test automation, and UI implementation through internships in both government and private sectors. I approach projects with a focus on clean, maintainable code and a strong attention to usability and performance.
+                      </p>
+                      <p>
+                        In my roles, I have developed and tested web applications using tools like NightWatch.js, XUnit, and ASP.NET Core, while ensuring responsive design and cross-browser compatibility with HTML, CSS, JavaScript, and WordPress.
+                      </p>
+                      <p>
+                        I work collaboratively within Agile teams, contribute to code reviews, and use Git for version control and task management. My workflow emphasizes clarity, testing, and iterative improvement based on feedback and performance results.
+                      </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore my</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                        
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>C#</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Testing Frameworks</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>XUnit</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>MSTest</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>NUnit</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>NightWatch.js</h3>
+                                <p>JavaScript</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-containor">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project one</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='Project1.html'">Site de service</button>
+                    </div>
+                </div>
+                <div class="details-container color-containor">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='Project2.html'">jeu</button>
+                    </div>
+                </div>
+                <div class="details-container color-containor">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="Project 3" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project three</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='Project3.html'">Site e-commerce</button>
+                    </div>
+                </div>
+                <div class="details-container color-containor">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="Project 4" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project four</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='Project4.html'">Site d'analyse et visualisation</button>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:atour095@uottawa.ca">atour095@uottawa.ca</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="Likedin Icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/abbaba-toure/">Linkedin</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Abbaba Toure. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
