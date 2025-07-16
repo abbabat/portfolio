@@ -462,3 +462,13 @@ footer{
 footer p{
     text-align: center;
 }
+
+#projects .about-containers .details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#projects .about-containers .details-container {
+    min-height: 25rem;
+}
