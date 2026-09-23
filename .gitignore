@@ -1,0 +1,7 @@
+.DS_Store
+node_modules/
+playwright-report/
+test-results/
+# Original personal photos stay local; the site uses optimized WebP exports.
+assets/IMG_3600.HEIC
+assets/IMG_9733.jpg

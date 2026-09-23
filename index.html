@@ -1,298 +1,522 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio- At</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
-    <nav id="desktop-nav"> 
-        <div class="logo">Abbaba Toure</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#work">work</a></li>
-                <li><a href="#contact">Contact</a></li>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Abbaba Toure — software engineering co-op student in Ottawa. Building reliable platforms, thoughtful web experiences, and automation that makes work better."
+    />
+    <meta name="theme-color" content="#f5f4ef" />
+    <meta
+      property="og:title"
+      content="Abbaba Toure — Software Engineer in the Making"
+    />
+    <meta
+      property="og:description"
+      content="From the interface to the infrastructure. Explore my work in platform engineering, test automation, and full-stack development."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://abbabat.github.io/portfolio/" />
+    <meta
+      property="og:image"
+      content="https://abbabat.github.io/portfolio/assets/portrait.webp"
+    />
+    <link rel="canonical" href="https://abbabat.github.io/portfolio/" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>
+      Abbaba Toure — Software Engineering &amp; Platform Development
+    </title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="./" aria-label="Abbaba Toure, home"
+        >abbaba<span class="orange">.</span></a
+      >
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="navigation"
+        hidden
+      >
+        Menu <span aria-hidden="true">+</span>
+      </button>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="#projects">Selected work</a><a href="#experience">Experience</a
+        ><a href="#about">About</a
+        ><a class="nav-contact" href="#contact"
+          >Let’s talk <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="status-dot"></span> SOFTWARE ENGINEERING CO-OP STUDENT
+          </p>
+          <h1 id="hero-title">
+            Good software.<br />From the <em>inside</em><br />to the
+            interface<span class="orange">.</span>
+          </h1>
+          <p class="hero-intro">
+            I’m Abbaba Toure. I build reliable platforms, automate the
+            repetitive, and turn ideas into experiences people can use.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="#projects"
+              >Explore my work <span aria-hidden="true">↘</span></a
+            ><a
+              class="text-link"
+              href="assets/Abbaba_Resume.pdf"
+              target="_blank"
+              rel="noopener"
+              >View résumé <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="portrait-frame">
+            <img
+              src="assets/portrait.webp"
+              alt="Abbaba Toure"
+              width="960"
+              height="1280"
+              fetchpriority="high"
+            /><span class="portrait-star" aria-hidden="true">✳</span>
+          </div>
+          <div class="portrait-caption">
+            <span>BASED IN OTTAWA, ON</span><span>45.4215° N · 75.6972° W</span>
+          </div>
+          <div class="mini-note">
+            <span aria-hidden="true">↳</span> A curious mind.<br />A builder at
+            heart.
+          </div>
+        </div>
+        <div class="hero-bottom">
+          <span>PLATFORM / AUTOMATION / FULL-STACK</span
+          ><a href="#experience"
+            >A little further down <span aria-hidden="true">↓</span></a
+          >
+        </div>
+      </section>
+      <section
+        class="credibility"
+        aria-label="Organizations I have worked with"
+      >
+        <div class="wrap">
+          <p>LEARNING BY BUILDING.<br />CONTRIBUTING AT.</p>
+          <span>JSI <b>Telecom</b></span
+          ><span>Global Affairs<br /><b>Canada</b></span
+          ><span class="university">uOttawa</span>
+        </div>
+      </section>
+      <section id="experience" class="section wrap">
+        <div class="section-heading">
+          <p class="eyebrow">01 / EXPERIENCE</p>
+          <h2>Real systems.<br /><em>Meaningful impact.</em></h2>
+          <p>
+            From government applications to deployment infrastructure, I care
+            about making things work—and keeping them that way.
+          </p>
+        </div>
+        <article class="featured-role">
+          <div class="role-header">
+            <div>
+              <p class="eyebrow">MOST RECENT / MAY — AUG 2026</p>
+              <h3>Software Developer Intern</h3>
+              <p>JSI Telecom <span class="muted">/ Ottawa, ON</span></p>
+            </div>
+            <span class="role-symbol" aria-hidden="true">↗</span>
+          </div>
+          <div class="role-grid">
+            <div>
+              <h4>Confidence in every deployment.</h4>
+              <p>
+                Built a GitHub Actions gate that deploys and integration-tests
+                every pull request against a live Ceph cluster. Made
+                infrastructure easier to run locally, more reliable to ship, and
+                more secure by default.
+              </p>
+              <div class="tags">
+                <span>GitHub Actions</span><span>Docker</span
+                ><span>Ansible</span><span>OpenTofu</span><span>Ceph</span>
+              </div>
+            </div>
+            <div class="metrics">
+              <div>
+                <strong>7</strong
+                ><span
+                  >releases delivered across<br />8 engineering tickets</span
+                >
+              </div>
+              <div>
+                <strong>0</strong
+                ><span
+                  >broken-infrastructure merges<br />through the validation
+                  gate</span
+                >
+              </div>
+            </div>
+          </div>
+          <details>
+            <summary>Behind the work <span aria-hidden="true">+</span></summary>
+            <ul>
+              <li>
+                Restored deployment reliability by resolving memory exhaustion
+                during the Ansible bootstrap phase.
+              </li>
+              <li>
+                Created a multi-stage Docker image and single-command wrapper
+                for OpenTofu, Terragrunt, Ansible, and Molecule.
+              </li>
+              <li>
+                Replaced root SSH access with a least-privilege Ansible service
+                account across four repositories and added SHA-512 credential
+                hashing across five environments.
+              </li>
+              <li>
+                Resolved a CI logging defect that exposed sensitive credentials.
+              </li>
             </ul>
+          </details>
+        </article>
+        <article class="timeline-role">
+          <div class="role-date">JAN — MAY 2025<br />SEP — DEC 2025</div>
+          <div>
+            <p class="eyebrow">GLOBAL AFFAIRS CANADA</p>
+            <h3>Automation Tester Intern</h3>
+            <p>
+              Led the migration of a Nightwatch.js automation suite to
+              Playwright. Demonstrated the new approach and secured team
+              approval to migrate the full repository.
+            </p>
+            <details>
+              <summary>
+                More about this role <span aria-hidden="true">+</span>
+              </summary>
+              <p>
+                Built end-to-end and regression suites across DEV/QA, authored
+                XUnit/C# tests with NSubstitute for ASP.NET Core services, and
+                improved test stability with data-test-ids and page-object
+                patterns. Managed pipelines, test cases, and pull requests in
+                Azure DevOps.
+              </p>
+            </details>
+            <div class="tags">
+              <span>Playwright</span><span>C# / XUnit</span
+              ><span>Azure DevOps</span>
+            </div>
+          </div>
+        </article>
+        <article class="timeline-role">
+          <div class="role-date">MAY — AUG 2024</div>
+          <div>
+            <p class="eyebrow">UNIVERSITY OF OTTAWA</p>
+            <h3>Junior Developer Intern</h3>
+            <p>
+              Made internal tools and information easier to use: interactive
+              support dashboards, cleaner Workday data, and improved intranet
+              experiences.
+            </p>
+            <details>
+              <summary>
+                More about this role <span aria-hidden="true">+</span>
+              </summary>
+              <p>
+                Migrated support tickets from TopDesk to Jira, developed Google
+                Sites and Confluence pages, tested ERP workflows through role
+                simulations, and wrote launch documentation in SharePoint.
+              </p>
+            </details>
+            <div class="tags">
+              <span>Data &amp; dashboards</span><span>Jira</span
+              ><span>Confluence</span>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section id="projects" class="section projects-section">
+        <div class="wrap">
+          <div class="section-heading">
+            <p class="eyebrow">02 / SELECTED WORK</p>
+            <h2>Ideas, made <em>real.</em></h2>
+            <p>
+              A collection of web experiences and team projects. Different
+              problems, the same curiosity.
+            </p>
+          </div>
+          <div class="filters" role="group" aria-label="Filter projects" hidden>
+            <button
+              type="button"
+              class="active"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              All projects <span>06</span></button
+            ><button type="button" data-filter="web" aria-pressed="false">
+              Web experiences</button
+            ><button type="button" data-filter="software" aria-pressed="false">
+              Software &amp; systems
+            </button>
+          </div>
+          <p class="sr-only" id="filter-status" aria-live="polite"></p>
+          <div class="project-grid">
+            <article class="project-card" data-category="web">
+              <a
+                href="Project4.html"
+                class="project-art art-ufc"
+                aria-label="Explore UFC Dashboard"
+                ><span class="art-label">DATA / VISUALIZATION</span
+                ><img
+                  src="assets/ufc.webp"
+                  alt="UFC Dashboard logo"
+                  width="480"
+                  height="480"
+                  loading="lazy"
+                /><span class="art-arrow" aria-hidden="true">↗</span></a
+              >
+              <div class="project-info">
+                <div>
+                  <p class="eyebrow">01 / WEB APPLICATION</p>
+                  <h3><a href="Project4.html">UFC Dashboard</a></h3>
+                </div>
+                <span class="project-type">Data exploration</span>
+              </div>
+              <p>
+                A dashboard that brings sports data into focus through charts
+                and visual exploration.
+              </p>
+            </article>
+            <article class="project-card" data-category="web">
+              <a
+                href="Project3.html"
+                class="project-art art-shoes"
+                aria-label="Explore Ryanairekicks"
+                ><span class="art-label">COMMERCE / INTERFACE</span
+                ><img
+                  src="assets/shoes.webp"
+                  alt="Ryanaire Kicks logo"
+                  width="480"
+                  height="480"
+                  loading="lazy"
+                /><span class="art-arrow" aria-hidden="true">↗</span></a
+              >
+              <div class="project-info">
+                <div>
+                  <p class="eyebrow">02 / WEB EXPERIENCE</p>
+                  <h3><a href="Project3.html">Ryanairekicks</a></h3>
+                </div>
+                <span class="project-type">Shoe storefront</span>
+              </div>
+              <p>
+                A responsive shoe-store experience exploring product
+                presentation and shopping interfaces.
+              </p>
+            </article>
+            <article class="project-card" data-category="web">
+              <a
+                href="Project1.html"
+                class="project-art art-vitro"
+                aria-label="Explore VitroPro"
+                ><span class="art-label">SERVICES / WEB DESIGN</span
+                ><img
+                  src="assets/vitro.webp"
+                  alt="VitroPro logo"
+                  width="480"
+                  height="480"
+                  loading="lazy"
+                /><span class="art-arrow" aria-hidden="true">↗</span></a
+              >
+              <div class="project-info">
+                <div>
+                  <p class="eyebrow">03 / SERVICE WEBSITE</p>
+                  <h3><a href="Project1.html">VitroPro</a></h3>
+                </div>
+                <span class="project-type">Cleaning services</span>
+              </div>
+              <p>
+                A service website designed to help visitors discover
+                professional cleaning services.
+              </p>
+            </article>
+            <article class="project-card" data-category="web">
+              <a
+                href="Project2.html"
+                class="project-art art-game"
+                aria-label="Explore PathPlay"
+                ><span class="art-label">PLAY / INTERACTION</span
+                ><img
+                  src="assets/game.webp"
+                  alt="PathPlay game controller and chess knight logo"
+                  width="480"
+                  height="480"
+                  loading="lazy"
+                /><span class="art-arrow" aria-hidden="true">↗</span></a
+              >
+              <div class="project-info">
+                <div>
+                  <p class="eyebrow">04 / BROWSER GAME</p>
+                  <h3><a href="Project2.html">PathPlay</a></h3>
+                </div>
+                <span class="project-type">Interactive play</span>
+              </div>
+              <p>
+                A browser-based guessing game built around dynamic interfaces
+                and playful interaction.
+              </p>
+            </article>
+            <article
+              class="project-card compact-project"
+              data-category="software"
+            >
+              <div class="software-icon" aria-hidden="true">▦</div>
+              <p class="eyebrow">05 / ANDROID · TEAM PROJECT</p>
+              <h3>Organization App</h3>
+              <p>
+                An event-management app with Organizer, Admin, and Attendee
+                roles, CRUD features, and real-time database updates.
+              </p>
+              <div class="tags">
+                <span>Java</span><span>Android</span><span>Firebase</span>
+              </div>
+            </article>
+            <article
+              class="project-card compact-project"
+              data-category="software"
+            >
+              <div class="software-icon" aria-hidden="true">⌘</div>
+              <p class="eyebrow">06 / SYSTEMS · TEAM PROJECT</p>
+              <h3>Client–Server Chat</h3>
+              <p>
+                A multi-threaded chat system with broadcast messaging,
+                concurrent clients, and server administration controls.
+              </p>
+              <div class="tags">
+                <span>Java</span><span>Multithreading</span
+                ><span>Client–server</span>
+              </div>
+            </article>
+          </div>
+          <a
+            class="text-link github-more"
+            href="https://github.com/abbabat"
+            target="_blank"
+            rel="noopener noreferrer"
+            >More on GitHub <span aria-hidden="true">↗</span></a
+          >
         </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Abbaba Toure</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span> 
-                <span></span> 
-                <span></span> 
+      </section>
+      <section id="about" class="section wrap about-section">
+        <div>
+          <p class="eyebrow">03 / THE PERSON BEHIND THE CODE</p>
+          <h2>Always curious.<br />Always <em>building.</em></h2>
+          <p class="about-lead">
+            I like understanding how the pieces fit together—from what someone
+            sees on a screen to the infrastructure running underneath.
+          </p>
+          <p>
+            I’m studying Software Engineering at the University of Ottawa, with
+            an expected graduation in December 2027. Co-op has taken me from
+            internal tools to government test automation and platform
+            infrastructure. Each experience has shaped how I build: with care,
+            collaboration, and an eye for what could work better.
+          </p>
+          <div class="education">
+            <span aria-hidden="true">↳</span>
+            <div>
+              <strong>University of Ottawa</strong>
+              <p>
+                BASc, Software Engineering (Co-op)<br />Expected December 2027 ·
+                Dean’s Honour List
+              </p>
             </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#work" onclick="toggleMenu()">work</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> 
-            </div>
+          </div>
         </div>
-    </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/4.png" alt="Abbaba Toure profile picture">
+        <div class="about-aside">
+          <figure class="about-photo">
+            <img
+              src="assets/about-portrait.webp"
+              alt="A recent portrait of Abbaba Toure"
+              width="960"
+              height="1280"
+              loading="lazy"
+            />
+            <figcaption>BEYOND THE TERMINAL / ABBABA TOURE</figcaption>
+          </figure>
         </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Abbaba Toure</h1>
-            <p class="section__text__p2">Fullstack Developer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Abbaba_Resume.pdf')">Download CV</button>
-                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact info</button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/abbaba-toure/'">
-                <img src="./assets/github.png" alt="My github profile" class="icon" onclick="location.href='https://github.com/abbabat'">
-            </div>
+        <aside class="toolkit">
+          <p class="eyebrow">MY WORKING TOOLKIT</p>
+          <div>
+            <h3>Build the experience</h3>
+            <p>
+              React · JavaScript · HTML &amp; CSS<br />Java · Python · C# ·
+              ASP.NET Core
+            </p>
+          </div>
+          <div>
+            <h3>Make it reliable</h3>
+            <p>
+              Playwright · Nightwatch.js · XUnit<br />MSTest · NUnit · Molecule
+            </p>
+          </div>
+          <div>
+            <h3>Ship with confidence</h3>
+            <p>
+              Docker · Kubernetes · GitHub Actions<br />Azure DevOps · Ansible ·
+              OpenTofu<br />Terragrunt · Ceph · Bash · HCL
+            </p>
+          </div>
+          <p class="toolkit-foot">
+            Good tools. Thoughtful decisions. Continuous learning.
+          </p>
+        </aside>
+      </section>
+      <section id="contact" class="contact-section">
+        <div class="wrap">
+          <p class="eyebrow">
+            <span class="status-dot"></span> 04 / LET’S CONNECT
+          </p>
+          <h2>
+            Have something<br />in <em>mind?</em
+            ><span aria-hidden="true">↗</span>
+          </h2>
+          <div class="contact-bottom">
+            <p>
+              A co-op opportunity, a project, or a conversation<br />about
+              building better software. I’d love to hear it.
+            </p>
+            <a class="contact-email" href="mailto:atour095@uottawa.ca"
+              >atour095@uottawa.ca <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="contact-links">
+            <a
+              href="https://www.linkedin.com/in/abbaba-toure/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn ↗</a
+            ><a
+              href="https://github.com/abbabat"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub ↗</a
+            ><a href="assets/Abbaba_Resume.pdf" download>Download résumé ↓</a
+            ><button type="button" id="copy-email" hidden>
+              Copy email <span aria-hidden="true">⧉</span></button
+            ><span id="copy-status" role="status"></span>
+          </div>
         </div>
-    </section>
-    <section id="about"> 
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/8.png" alt="profile picture" class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
-                        <h3>Experience</h3>
-                        <p>3+ years <br />Fullstack Developer</p> 
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Education icon" class="icon">
-                        <h3>Education</h3>
-                        <p>2nd year <br />university student <br />B.SC. Software engineering</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>
-                        Hello, I am a second-year student at the University of Ottawa, working towards graduating in 2028 with a bachelor's degree in software engineering. I love learning new skills and expanding my experiences. I am currently working on expanding my skills and knowledge in software development through academic courses available to me and by involving myself in diverse projects both alone and with peers. In my co-op journey, my goal is to improve as a software engineer by developing various software development abilities and contributing to real-life projects that will have a significant impact on the software industry.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#work'">
-    </section>
-    <section id="work"> 
-        <p class="section__text__p1">Learn About</p>
-        <h1 class="title">How I Work</h1>
-        <div class="section-container">
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
-                        <h3>Automation Tester Intern</h3>
-                        <p>Global Affairs Canada <br />January 2025 – May 2025</p> 
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
-                        <h3>Junior Developer Intern</h3>
-                        <p>University of Ottawa <br />May 2024 – August 2024</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>
-                        As a Software Engineering student at the University of Ottawa, I have built hands-on experience in full-stack development, test automation, and UI implementation through internships in both government and private sectors. I approach projects with a focus on clean, maintainable code and a strong attention to usability and performance.
-                      </p>
-                      <p>
-                        In my roles, I have developed and tested web applications using tools like NightWatch.js, XUnit, and ASP.NET Core, while ensuring responsive design and cross-browser compatibility with HTML, CSS, JavaScript, and WordPress.
-                      </p>
-                      <p>
-                        I work collaboratively within Agile teams, contribute to code reviews, and use Git for version control and task management. My workflow emphasizes clarity, testing, and iterative improvement based on feedback and performance results.
-                      </p>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'">
-    </section>
-    <section id="experience">
-        <p class="section__text__p1">Explore my</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">                    
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                    
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                    
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Beginner</p>
-                            </div>
-                        </article>
-                        
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Python</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>C#</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                    
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Java</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Testing Frameworks</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>XUnit</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>MSTest</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>NUnit</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>NightWatch.js</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'">
-    </section>
-    <section id="projects">
-        <p class="section__text__p1">Browse My recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-1.png" alt="Project 1" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">VitroPro</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="window.location.href='https://vitropro.netlify.app'">VitroPro</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/100.png" alt="Project 2" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">PathPlay</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="window.location.href='https://pathplay.netlify.app'">PathPlay</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/200.png" alt="Project 3" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Ryanairekicks</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="window.location.href='https://ryanairekicks.netlify.app'">Ryanairekicks</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/300.png" alt="Project 4" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">UFC Dashboard</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="window.location.href='https://abbabat.github.io/ufc-dashboard/'">UFC Dashboard</button>
-                    </div>
-                </div>
-                
-                
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'">
-    </section>
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon email-icon">
-                <p><a href="mailto:atour095@uottawa.ca">atour095@uottawa.ca</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="Likedin Icon" class="icon contact-icon">
-                <p><a href="https://www.linkedin.com/in/abbaba-toure/">Linkedin</a></p>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#work">work</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-        </nav>
-        <p>Copyright &#169; 2024 Abbaba Toure. All Rights Reserved.</p>
+      </section>
+    </main>
+    <footer class="site-footer wrap">
+      <a class="wordmark" href="#main">abbaba<span class="orange">.</span></a>
+      <p>© <span id="year">2026</span> Abbaba Toure. Built with intention.</p>
+      <a href="#main">Back to top ↑</a>
     </footer>
-    <script src="script.js"></script>
-</body>
+  </body>
 </html>
