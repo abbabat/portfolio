@@ -42,4 +42,4 @@ The hero uses `assets/portrait.webp`; About uses `assets/about-portrait.webp`. K
 
 ## Visual design
 
-Barlow and Barlow Condensed are served locally from `assets/fonts/`, with their SIL Open Font License files included. The project rows use WebP screenshots of the deployed apps (`assets/*-screen.webp`). The charcoal/blue palette and responsive layouts are defined in `style.css`.
+Barlow and Barlow Condensed are served locally from `assets/fonts/`, with their SIL Open Font License files included. The project rows use WebP screenshots of the deployed apps (`assets/*-screen.webp`). The light/blue palette and responsive layouts are defined in `style.css`.

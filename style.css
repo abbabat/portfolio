@@ -12,13 +12,13 @@
   font-display: swap;
 }
 :root {
-  --paper: #101214;
-  --ink: #f0f0eb;
-  --muted: #abb0b6;
-  --accent: #86a8ff;
+  --paper: #fafafa;
+  --ink: #17191d;
+  --muted: #5c626b;
+  --accent: #234ff1;
   --blue: #234ff1;
-  --line: #383c42;
-  --panel: #191c20;
+  --line: #d4d7dd;
+  --panel: #f0f2f6;
   --max: 1320px;
   --display: "Barlow Condensed", "Arial Narrow", sans-serif;
 }
@@ -208,7 +208,7 @@ summary:focus-visible {
   content: "";
   position: absolute;
   inset: 0;
-  border: 1px solid #ffffff20;
+  border: 1px solid #17191d20;
   pointer-events: none;
 }
 .portrait-frame img {
