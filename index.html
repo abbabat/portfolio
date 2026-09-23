@@ -7,10 +7,10 @@
       name="description"
       content="Abbaba Toure — software engineering co-op student in Ottawa. Building reliable platforms, thoughtful web experiences, and automation that makes work better."
     />
-    <meta name="theme-color" content="#f5f4ef" />
+    <meta name="theme-color" content="#101214" />
     <meta
       property="og:title"
-      content="Abbaba Toure — Software Engineer in the Making"
+      content="Abbaba Toure — Software Engineering &amp; Platform Development"
     />
     <meta
       property="og:description"
@@ -34,7 +34,7 @@
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <a class="wordmark" href="./" aria-label="Abbaba Toure, home"
-        >abbaba<span class="orange">.</span></a
+        >AT<span class="orange">/</span></a
       >
       <button
         class="menu-toggle"
@@ -55,70 +55,243 @@
     </header>
     <main id="main">
       <section class="hero wrap" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">
-            <span class="status-dot"></span> SOFTWARE ENGINEERING CO-OP STUDENT
-          </p>
-          <h1 id="hero-title">
-            Good software.<br />From the <em>inside</em><br />to the
-            interface<span class="orange">.</span>
-          </h1>
-          <p class="hero-intro">
-            I’m Abbaba Toure. I build reliable platforms, automate the
-            repetitive, and turn ideas into experiences people can use.
-          </p>
-          <div class="actions">
-            <a class="button primary" href="#projects"
-              >Explore my work <span aria-hidden="true">↘</span></a
-            ><a
-              class="text-link"
-              href="assets/Abbaba_Resume.pdf"
-              target="_blank"
-              rel="noopener"
-              >View résumé <span aria-hidden="true">↗</span></a
-            >
-          </div>
+        <div class="hero-topline">
+          <p>SOFTWARE ENGINEERING / UNIVERSITY OF OTTAWA</p>
+          <p>PORTFOLIO — 2026</p>
         </div>
-        <div class="hero-visual">
-          <div class="portrait-frame">
-            <img
-              src="assets/portrait.webp"
-              alt="Abbaba Toure"
-              width="960"
-              height="1280"
-              fetchpriority="high"
-            /><span class="portrait-star" aria-hidden="true">✳</span>
+        <h1 id="hero-title">
+          ABBABA <span>TOURE</span><span class="name-period">.</span>
+        </h1>
+        <div class="hero-stage">
+          <div class="hero-visual">
+            <div class="portrait-frame">
+              <img
+                src="assets/portrait.webp"
+                alt="Abbaba Toure"
+                width="960"
+                height="1280"
+                fetchpriority="high"
+              />
+            </div>
+            <div class="portrait-caption">
+              <span>OTTAWA, CANADA</span><span>SOFTWARE ENGINEERING CO-OP</span>
+            </div>
           </div>
-          <div class="portrait-caption">
-            <span>BASED IN OTTAWA, ON</span><span>45.4215° N · 75.6972° W</span>
-          </div>
-          <div class="mini-note">
-            <span aria-hidden="true">↳</span> A curious mind.<br />A builder at
-            heart.
+          <div class="hero-copy">
+            <p class="eyebrow">A BIT ABOUT WHAT I DO</p>
+            <h2>
+              Interfaces, tests,<br /><span
+                >and everything<br />underneath.</span
+              >
+            </h2>
+            <p class="hero-intro">
+              From a web interface to the deployment pipeline behind it. I’m a
+              software engineering student working across platform
+              infrastructure, automation, and full-stack development.
+            </p>
+            <div class="actions">
+              <a class="button primary" href="#projects"
+                >See the work <span aria-hidden="true">↓</span></a
+              ><a
+                class="text-link"
+                href="assets/Abbaba_Resume.pdf"
+                target="_blank"
+                rel="noopener"
+                >Résumé <span aria-hidden="true">↗</span></a
+              >
+            </div>
           </div>
         </div>
         <div class="hero-bottom">
-          <span>PLATFORM / AUTOMATION / FULL-STACK</span
-          ><a href="#experience"
-            >A little further down <span aria-hidden="true">↓</span></a
+          <span>PREVIOUSLY AT</span>
+          <div>
+            <span>JSI TELECOM</span><span>GLOBAL AFFAIRS CANADA</span
+            ><span>UOTTAWA</span>
+          </div>
+          <a href="#projects" aria-label="Scroll to selected projects"
+            >SCROLL ↓</a
           >
         </div>
       </section>
-      <section
-        class="credibility"
-        aria-label="Organizations I have worked with"
-      >
+      <section id="projects" class="section projects-section">
         <div class="wrap">
-          <p>LEARNING BY BUILDING.<br />CONTRIBUTING AT.</p>
-          <span>JSI <b>Telecom</b></span
-          ><span>Global Affairs<br /><b>Canada</b></span
-          ><span class="university">uOttawa</span>
+          <div class="section-heading">
+            <p class="eyebrow">01 / SELECTED WORK</p>
+            <h2>SELECTED WORK<span class="orange"> /</span></h2>
+            <p>
+              Web apps, a mobile app, and a few experiments in how software fits
+              together.
+            </p>
+          </div>
+          <div class="filters" role="group" aria-label="Filter projects" hidden>
+            <button
+              type="button"
+              class="active"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              All projects <span>06</span></button
+            ><button type="button" data-filter="web" aria-pressed="false">
+              Web experiences</button
+            ><button type="button" data-filter="software" aria-pressed="false">
+              Software &amp; systems
+            </button>
+          </div>
+          <p class="sr-only" id="filter-status" aria-live="polite"></p>
+          <div class="project-grid">
+            <article class="project-card" data-category="web">
+              <a
+                href="Project4.html"
+                class="project-art art-ufc"
+                aria-label="Explore UFC Dashboard"
+                ><span class="art-label">DATA / VISUALIZATION</span
+                ><img
+                  class="project-screenshot"
+                  src="assets/ufc-screen.webp"
+                  alt="UFC Dashboard application preview"
+                  width="480"
+                  height="480"
+                  loading="lazy"
+                /><span class="art-arrow" aria-hidden="true">↗</span></a
+              >
+              <div class="project-info">
+                <div>
+                  <p class="eyebrow">01 / WEB APPLICATION</p>
+                  <h3><a href="Project4.html">UFC Dashboard</a></h3>
+                </div>
+                <span class="project-type">Data exploration</span>
+              </div>
+              <p>
+                A dashboard that brings sports data into focus through charts
+                and visual exploration.
+              </p>
+            </article>
+            <article class="project-card" data-category="web">
+              <a
+                href="Project3.html"
+                class="project-art art-shoes"
+                aria-label="Explore Ryanairekicks"
+                ><span class="art-label">COMMERCE / INTERFACE</span
+                ><img
+                  class="project-screenshot"
+                  src="assets/shoes-screen.webp"
+                  alt="Ryanaire Kicks application preview"
+                  width="480"
+                  height="480"
+                  loading="lazy"
+                /><span class="art-arrow" aria-hidden="true">↗</span></a
+              >
+              <div class="project-info">
+                <div>
+                  <p class="eyebrow">02 / WEB EXPERIENCE</p>
+                  <h3><a href="Project3.html">Ryanairekicks</a></h3>
+                </div>
+                <span class="project-type">Shoe storefront</span>
+              </div>
+              <p>
+                A responsive shoe-store experience exploring product
+                presentation and shopping interfaces.
+              </p>
+            </article>
+            <article class="project-card" data-category="web">
+              <a
+                href="Project1.html"
+                class="project-art art-vitro"
+                aria-label="Explore VitroPro"
+                ><span class="art-label">SERVICES / WEB DESIGN</span
+                ><img
+                  class="project-screenshot"
+                  src="assets/vitro-screen.webp"
+                  alt="VitroPro application preview"
+                  width="480"
+                  height="480"
+                  loading="lazy"
+                /><span class="art-arrow" aria-hidden="true">↗</span></a
+              >
+              <div class="project-info">
+                <div>
+                  <p class="eyebrow">03 / SERVICE WEBSITE</p>
+                  <h3><a href="Project1.html">VitroPro</a></h3>
+                </div>
+                <span class="project-type">Cleaning services</span>
+              </div>
+              <p>
+                A service website designed to help visitors discover
+                professional cleaning services.
+              </p>
+            </article>
+            <article class="project-card" data-category="web">
+              <a
+                href="Project2.html"
+                class="project-art art-game"
+                aria-label="Explore PathPlay"
+                ><span class="art-label">PLAY / INTERACTION</span
+                ><img
+                  class="project-screenshot"
+                  src="assets/game-screen.webp"
+                  alt="PathPlay difficulty and theme selection screen"
+                  width="480"
+                  height="480"
+                  loading="lazy"
+                /><span class="art-arrow" aria-hidden="true">↗</span></a
+              >
+              <div class="project-info">
+                <div>
+                  <p class="eyebrow">04 / BROWSER GAME</p>
+                  <h3><a href="Project2.html">PathPlay</a></h3>
+                </div>
+                <span class="project-type">Interactive play</span>
+              </div>
+              <p>
+                A browser-based guessing game built around dynamic interfaces
+                and playful interaction.
+              </p>
+            </article>
+            <article
+              class="project-card compact-project"
+              data-category="software"
+            >
+              <div class="software-icon" aria-hidden="true">▦</div>
+              <p class="eyebrow">05 / ANDROID · TEAM PROJECT</p>
+              <h3>Organization App</h3>
+              <p>
+                An event-management app with Organizer, Admin, and Attendee
+                roles, CRUD features, and real-time database updates.
+              </p>
+              <div class="tags">
+                <span>Java</span><span>Android</span><span>Firebase</span>
+              </div>
+            </article>
+            <article
+              class="project-card compact-project"
+              data-category="software"
+            >
+              <div class="software-icon" aria-hidden="true">⌘</div>
+              <p class="eyebrow">06 / SYSTEMS · TEAM PROJECT</p>
+              <h3>Client–Server Chat</h3>
+              <p>
+                A multi-threaded chat system with broadcast messaging,
+                concurrent clients, and server administration controls.
+              </p>
+              <div class="tags">
+                <span>Java</span><span>Multithreading</span
+                ><span>Client–server</span>
+              </div>
+            </article>
+          </div>
+          <a
+            class="text-link github-more"
+            href="https://github.com/abbabat"
+            target="_blank"
+            rel="noopener noreferrer"
+            >More on GitHub <span aria-hidden="true">↗</span></a
+          >
         </div>
       </section>
       <section id="experience" class="section wrap">
         <div class="section-heading">
-          <p class="eyebrow">01 / EXPERIENCE</p>
-          <h2>Real systems.<br /><em>Meaningful impact.</em></h2>
+          <p class="eyebrow">02 / EXPERIENCE</p>
+          <h2>Where I’ve<br />put in the work.</h2>
           <p>
             From government applications to deployment infrastructure, I care
             about making things work—and keeping them that way.
@@ -240,181 +413,10 @@
           </div>
         </article>
       </section>
-      <section id="projects" class="section projects-section">
-        <div class="wrap">
-          <div class="section-heading">
-            <p class="eyebrow">02 / SELECTED WORK</p>
-            <h2>Ideas, made <em>real.</em></h2>
-            <p>
-              A collection of web experiences and team projects. Different
-              problems, the same curiosity.
-            </p>
-          </div>
-          <div class="filters" role="group" aria-label="Filter projects" hidden>
-            <button
-              type="button"
-              class="active"
-              data-filter="all"
-              aria-pressed="true"
-            >
-              All projects <span>06</span></button
-            ><button type="button" data-filter="web" aria-pressed="false">
-              Web experiences</button
-            ><button type="button" data-filter="software" aria-pressed="false">
-              Software &amp; systems
-            </button>
-          </div>
-          <p class="sr-only" id="filter-status" aria-live="polite"></p>
-          <div class="project-grid">
-            <article class="project-card" data-category="web">
-              <a
-                href="Project4.html"
-                class="project-art art-ufc"
-                aria-label="Explore UFC Dashboard"
-                ><span class="art-label">DATA / VISUALIZATION</span
-                ><img
-                  src="assets/ufc.webp"
-                  alt="UFC Dashboard logo"
-                  width="480"
-                  height="480"
-                  loading="lazy"
-                /><span class="art-arrow" aria-hidden="true">↗</span></a
-              >
-              <div class="project-info">
-                <div>
-                  <p class="eyebrow">01 / WEB APPLICATION</p>
-                  <h3><a href="Project4.html">UFC Dashboard</a></h3>
-                </div>
-                <span class="project-type">Data exploration</span>
-              </div>
-              <p>
-                A dashboard that brings sports data into focus through charts
-                and visual exploration.
-              </p>
-            </article>
-            <article class="project-card" data-category="web">
-              <a
-                href="Project3.html"
-                class="project-art art-shoes"
-                aria-label="Explore Ryanairekicks"
-                ><span class="art-label">COMMERCE / INTERFACE</span
-                ><img
-                  src="assets/shoes.webp"
-                  alt="Ryanaire Kicks logo"
-                  width="480"
-                  height="480"
-                  loading="lazy"
-                /><span class="art-arrow" aria-hidden="true">↗</span></a
-              >
-              <div class="project-info">
-                <div>
-                  <p class="eyebrow">02 / WEB EXPERIENCE</p>
-                  <h3><a href="Project3.html">Ryanairekicks</a></h3>
-                </div>
-                <span class="project-type">Shoe storefront</span>
-              </div>
-              <p>
-                A responsive shoe-store experience exploring product
-                presentation and shopping interfaces.
-              </p>
-            </article>
-            <article class="project-card" data-category="web">
-              <a
-                href="Project1.html"
-                class="project-art art-vitro"
-                aria-label="Explore VitroPro"
-                ><span class="art-label">SERVICES / WEB DESIGN</span
-                ><img
-                  src="assets/vitro.webp"
-                  alt="VitroPro logo"
-                  width="480"
-                  height="480"
-                  loading="lazy"
-                /><span class="art-arrow" aria-hidden="true">↗</span></a
-              >
-              <div class="project-info">
-                <div>
-                  <p class="eyebrow">03 / SERVICE WEBSITE</p>
-                  <h3><a href="Project1.html">VitroPro</a></h3>
-                </div>
-                <span class="project-type">Cleaning services</span>
-              </div>
-              <p>
-                A service website designed to help visitors discover
-                professional cleaning services.
-              </p>
-            </article>
-            <article class="project-card" data-category="web">
-              <a
-                href="Project2.html"
-                class="project-art art-game"
-                aria-label="Explore PathPlay"
-                ><span class="art-label">PLAY / INTERACTION</span
-                ><img
-                  src="assets/game.webp"
-                  alt="PathPlay game controller and chess knight logo"
-                  width="480"
-                  height="480"
-                  loading="lazy"
-                /><span class="art-arrow" aria-hidden="true">↗</span></a
-              >
-              <div class="project-info">
-                <div>
-                  <p class="eyebrow">04 / BROWSER GAME</p>
-                  <h3><a href="Project2.html">PathPlay</a></h3>
-                </div>
-                <span class="project-type">Interactive play</span>
-              </div>
-              <p>
-                A browser-based guessing game built around dynamic interfaces
-                and playful interaction.
-              </p>
-            </article>
-            <article
-              class="project-card compact-project"
-              data-category="software"
-            >
-              <div class="software-icon" aria-hidden="true">▦</div>
-              <p class="eyebrow">05 / ANDROID · TEAM PROJECT</p>
-              <h3>Organization App</h3>
-              <p>
-                An event-management app with Organizer, Admin, and Attendee
-                roles, CRUD features, and real-time database updates.
-              </p>
-              <div class="tags">
-                <span>Java</span><span>Android</span><span>Firebase</span>
-              </div>
-            </article>
-            <article
-              class="project-card compact-project"
-              data-category="software"
-            >
-              <div class="software-icon" aria-hidden="true">⌘</div>
-              <p class="eyebrow">06 / SYSTEMS · TEAM PROJECT</p>
-              <h3>Client–Server Chat</h3>
-              <p>
-                A multi-threaded chat system with broadcast messaging,
-                concurrent clients, and server administration controls.
-              </p>
-              <div class="tags">
-                <span>Java</span><span>Multithreading</span
-                ><span>Client–server</span>
-              </div>
-            </article>
-          </div>
-          <a
-            class="text-link github-more"
-            href="https://github.com/abbabat"
-            target="_blank"
-            rel="noopener noreferrer"
-            >More on GitHub <span aria-hidden="true">↗</span></a
-          >
-        </div>
-      </section>
       <section id="about" class="section wrap about-section">
         <div>
-          <p class="eyebrow">03 / THE PERSON BEHIND THE CODE</p>
-          <h2>Always curious.<br />Always <em>building.</em></h2>
+          <p class="eyebrow">03 / ABOUT ME</p>
+          <h2>A LITTLE<br />OFF-SCRIPT.</h2>
           <p class="about-lead">
             I like understanding how the pieces fit together—from what someone
             sees on a screen to the infrastructure running underneath.
@@ -472,18 +474,18 @@
             </p>
           </div>
           <p class="toolkit-foot">
-            Good tools. Thoughtful decisions. Continuous learning.
+            The tools I’ve used in projects, coursework, and co-op.
           </p>
         </aside>
       </section>
       <section id="contact" class="contact-section">
         <div class="wrap">
-          <p class="eyebrow">
-            <span class="status-dot"></span> 04 / LET’S CONNECT
-          </p>
+          <p class="eyebrow"><span class="status-dot"></span> 04 / NEXT UP</p>
           <h2>
-            Have something<br />in <em>mind?</em
-            ><span aria-hidden="true">↗</span>
+            LET’S MAKE<br />SOMETHING
+            <a href="mailto:atour095@uottawa.ca" aria-label="Email Abbaba Toure"
+              >↗</a
+            >
           </h2>
           <div class="contact-bottom">
             <p>
@@ -514,8 +516,8 @@
       </section>
     </main>
     <footer class="site-footer wrap">
-      <a class="wordmark" href="#main">abbaba<span class="orange">.</span></a>
-      <p>© <span id="year">2026</span> Abbaba Toure. Built with intention.</p>
+      <a class="wordmark" href="#main">AT<span class="orange">/</span></a>
+      <p>© <span id="year">2026</span> Abbaba Toure</p>
       <a href="#main">Back to top ↑</a>
     </footer>
   </body>
