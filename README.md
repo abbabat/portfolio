@@ -26,7 +26,7 @@ Open http://localhost:8000. Serve over HTTP instead of opening the HTML as a fil
 
 Update role dates, descriptions, and education in `index.html`. Replace `assets/Abbaba_Resume.pdf` whenever the résumé changes. Keep project overview content aligned with the home page. All internal asset URLs are relative so the site works under the GitHub Pages `/portfolio/` path.
 
-The core site works without JavaScript. Enhancements respect reduced motion, support keyboard use, and avoid runtime dependencies and third-party font requests. Project filtering uses native buttons with pressed states; work details use native disclosure elements.
+The core site works without JavaScript. Enhancements respect reduced motion, support keyboard use, and avoid runtime dependencies and external font requests. Project filtering uses native buttons with pressed states; work details use native disclosure elements.
 
 ## Deploy
 
@@ -40,6 +40,6 @@ Check desktop and mobile layouts, keyboard navigation, menu open/close and Escap
 
 The hero uses `assets/portrait.webp`; About uses `assets/about-portrait.webp`. Keep original personal photos locally and publish optimized exports without camera metadata. Adjust `object-position` in the portrait styles when replacing images, then check face framing at desktop and mobile widths.
 
-## Visual design
+## Design and photos
 
-Barlow and Barlow Condensed are served locally from `assets/fonts/`, with their SIL Open Font License files included. The project rows use WebP screenshots of the deployed apps (`assets/*-screen.webp`). The light/blue palette and responsive layouts are defined in `style.css`.
+The warm, light layout uses locally hosted Barlow (SIL OFL license in `assets/fonts/`). The hero photo has a circular frame with headroom; the About photo retains its full natural proportions. WebP screenshots in `assets/*-screen.webp` show the actual deployed projects.
